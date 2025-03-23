@@ -2,6 +2,13 @@
 
 My first lua project to become more familair with the syntax and semantics
 
+## TODOs
+
+- [x] read in a file as a program arg and verify it is valid
+- [x] validate that the file is a markdown file
+- [x] convert the markdown file to an html file via lunamark
+- [x] open the html file in the browser via a os command `open markdown.html`
+
 ## Planning
 
 - To display it as formatted Markdown in a browser, it needs to be converted it to HTML

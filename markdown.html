@@ -1,0 +1,33 @@
+<h2>Notes</h2>
+
+<p>Some things I have learned about Lua</p>
+
+<ul>
+<li>arrays are implemented with tables <code>{}</code> and sub-scripting starts at 1</li>
+<li>functions need to be defined before they are called so they are hoisted, the only way around this is ‘forward declaration’ i.e define the function signature before calling</li>
+<li>the operator ~= is <code>not euqal too</code> or <code>!=</code> ???</li>
+<li>method syntax which implicitly passes table f as the first arg (self) to the method close:</li>
+</ul>
+
+<p><code>lua
+local f = io.open(file)
+f:close()
+</code></p>
+
+<ul>
+<li>Use the <code>#</code> operator to get the size of a table:</li>
+</ul>
+
+<p><code>lua
+local args = { ... }
+local n = #args
+</code></p>
+
+<ul>
+<li>string concatenation is used with the .. operator. The + operator is used for integers</li>
+</ul>
+
+<code>lua
+local s = &quot;some string&quot;
+local new_s = &quot;string and &quot; .. s
+</code>
